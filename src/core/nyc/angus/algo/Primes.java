@@ -25,21 +25,26 @@ public class Primes {
 		return convertToStream(createSieve(n)).collect(Collectors.toList());
 	}
 
+	/**
+	 * Create a prime sieve for all numbers from 1-n inclusive.
+	 */
 	private static boolean[] createSieve(final int n) {
 		final boolean[] primes = new boolean[n + 1];
 
+		// Set all potential prime elements to true:
 		for (int i = 2; i < primes.length; i++) {
 			primes[i] = true;
 		}
 
+		// Eliminate composite numbers:
 		for (int i = 2; i * i <= n; i++) {
-
 			if (primes[i]) {
 				for (int j = i; i * j <= n; j++) {
 					primes[i * j] = false;
 				}
 			}
 		}
+
 		return primes;
 	}
 
