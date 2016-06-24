@@ -15,4 +15,23 @@ public class MathsTest {
 		assertEquals(0, Maths.countSquares(17, 24));
 	}
 
+	@Test
+	public void factorialTest() {
+		final int fiveFact = 5 * 4 * 3 * 2 * 1;
+
+		assertEquals(fiveFact, Maths.factorial(5));
+	}
+
+	@Test
+	public void factorialTestZero() {
+		assertEquals(1, Maths.factorial(0));
+	}
+
+	@Test
+	public void reverseNumber() {
+		assertEquals(12345, Maths.reverse(54321));
+		assertEquals(5, Maths.reverse(500));
+		assertEquals(77, Maths.reverse(77));
+	}
+
 }
