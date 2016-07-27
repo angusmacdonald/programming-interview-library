@@ -34,4 +34,13 @@ public class MathsTest {
 		assertEquals(77, Maths.reverse(77));
 	}
 
+	@Test
+	public void findLonelyInteger() {
+		final int[] arr = { 1, 2, 4, 2, 1 };
+		assertEquals(4, Maths.findLonelyInteger(arr));
+
+		final int[] arr2 = { 1, 2, 4, 2, 4 };
+		assertEquals(1, Maths.findLonelyInteger(arr2));
+	}
+
 }
