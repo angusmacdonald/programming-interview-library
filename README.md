@@ -1,24 +1,39 @@
-# ALGO
+# Library of Programming Interview Algorithms
 
-Repository implementing lots of algorithms commonly used in programming interviews.
+Java solutions to algorithms commonly used in programming interviews.
 
-If you can imagine being able to use this as an existing library in a programming interview (a stretch), the idea is that this library contains a litany of different things you only ever need to attempt in such a situation.
+### Motivation
 
-As such, it's mostly pointless, but you may be interested in specific algorithms. These include generalized versions of:
+Whe I was revising for programming interviews I thought it would be more interesting to package solutions into a utility library. Consider it the library that programmers would want to use in an interview situation, if such a thing were ever allowed.
 
+### Algorithms Included
+The library currently includes generalized versions of:
+
+#### Strings
 - Getting all permutations of a string
+- Levenshtein (edit) distance between two strings
+
+#### Arrays
 - Longest common subsequence
 - Longest increasing subsequence
+- Max intervals that can overlap
+- Number of ways to reach a goal
+- Matrix search algorithm
+
+#### Graphs
+- Dijkstra's shortest path algorithm
+
+#### Lists
+- Check if a list is a palindrome
+
+#### Math
 - Creation of a prime sieve
 - Computing factorial
 - Reversing a number
-- Max intervals that can overlap
-- Number of ways to reach a goal
-- Dijkstra's shortest path algorithm
-- Converting to and from Roman Numerals
-- Levenshtein (edit) distance between two strings
-- Matrix search algorithm
+
+#### Sorting / Search
 - Counting and quicksort implementations
 - Heap-based median finding solution
-- Check if a list is a palindrome
-- 
+
+#### General
+- Converting to and from Roman Numerals
