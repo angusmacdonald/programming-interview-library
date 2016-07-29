@@ -19,9 +19,9 @@ public class Strings {
 		final int[][] memo = new int[a.length + 1][b.length + 1];
 
 		/*
-		 * Set up initial 0 x and y axis elements. THe premise of the setup is that (for the first row/column) each step
+		 * Set up initial 0 x and y axis elements. The premise of the setup is that (for the first row/column) each step
 		 * takes one string i steps away from the other string (i.e. it would take i deletions to get to the other
-		 * string which has one character at this point).
+		 * string which has one character at this point), so the edit distance increases by one each time.
 		 */
 		for (int i = 0; i <= a.length; i++) {
 			memo[i][0] = i;
@@ -31,7 +31,10 @@ public class Strings {
 			memo[0][i] = i;
 		}
 
-		// Calculate for remaining elements:
+		/*
+		 * Calculate for remaining elements. For the edit distance to not change, the entries and position y-1 and x-1
+		 * must match, indicating the edit distance did not increase in this jump.
+		 */
 		for (int y = 1; y <= a.length; y++) {
 			for (int x = 1; x <= b.length; x++) {
 				if (a[y - 1] == b[x - 1]) {
