@@ -4,7 +4,7 @@ Java solutions to algorithms commonly used in programming interviews.
 
 ### Motivation
 
-Whe I was revising for programming interviews I thought it would be more interesting to package solutions into a utility library. Consider it the library that programmers would want to use in an interview situation, if such a thing were ever allowed.
+While I was revising for programming interviews I thought it would be more interesting to package solutions into a utility library. Consider it the library that programmers would want to use in an interview situation, if such a thing were ever allowed.
 
 ### Algorithms Included
 The library currently includes generalized versions of:
